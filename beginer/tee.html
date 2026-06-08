@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Sinh Viên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hệ Thống Quản Lý Sinh Viên</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#login">Đăng Nhập</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Màn hình đăng nhập -->
+    <section id="login">
+        <h2>Đăng Nhập</h2>
+        <form id="loginForm">
+            <label for="username">Tên đăng nhập:</label>
+            <input type="text" id="username" required>
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Đăng Nhập</button>
+        </form>
+    </section>
+
+    <!-- Màn hình chức năng giáo viên -->
+    <section id="teacher-functions" class="functions">
+        <h2>Chức Năng Giáo Viên</h2>
+        <ul>
+            <li><button id="addStudentBtn">Thêm Sinh Viên</button></li>
+            <li><button id="attendanceBtn">Điểm Danh</button></li>
+            <li><button id="scheduleBtn">Tạo Thời Khóa Biểu</button></li>
+            <li><button id="logoutBtn">Thoát</button></li>
+        </ul>
+    </section>
+
+    <!-- Màn hình chức năng sinh viên -->
+    <section id="student-functions" class="functions">
+        <h2>Chức Năng Sinh Viên</h2>
+        <ul>
+            <li><button id="viewScheduleBtn">Xem Thời Khóa Biểu</button></li>
+            <li><button id="viewGradesBtn">Xem Điểm</button></li>
+            <li><button id="logoutBtn">Thoát</button></li>
+        </ul>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
